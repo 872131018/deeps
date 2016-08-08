@@ -26,6 +26,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/amenity/edit/{id}', 'AmenityController@edit');
     Route::post('/amenity/edit/{id}', 'AmenityController@save');
     Route::get('/amenity/delete/{id}', 'AmenityController@delete');
+    Route::options('/amenity/edit/{id}', 'AmenityController@gallery');
     /*
     * Location stuff
     */
@@ -45,7 +46,7 @@ Route::group(['middleware' => 'web'], function () {
     */
     Route::get('/images', 'ImageController@index');
     //Route::get('/images/edit/{id}', 'ImageController@edit'); Not sure an image needs to be edited
-    Route::put('/images', 'ImageController@put');
+    Route::put('/images', 'ImageController@save');
     Route::delete('/images', 'ImageController@delete');
     /*
     * Unit stuff
@@ -54,6 +55,10 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/units/edit/{id}', 'UnitController@edit');
     Route::post('/units/edit/{id}', 'UnitController@save');
     Route::get('/units/delete/{id}', 'UnitController@delete');
+    /*
+    * Gallery Routes
+    */
+    Route::get('/gallery', 'GalleryController@index');
 });
 
 Route::get('/', function () {

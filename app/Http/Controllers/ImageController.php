@@ -37,12 +37,12 @@ class ImageController extends Controller
         return view('images.index', [
             'images' => $images
         ]);
-  }
+    }
   /**
   * Save a file through a post request
   * @return \Illuminate\Http\Response
   */
-  public function add(Request $request) {
+  public function save(Request $request) {
     $image = $request->file('file');
     if($image->move(public_path('uploads'), $image->getClientOriginalName())) {
       return json_encode([

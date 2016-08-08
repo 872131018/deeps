@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta name="base_url" content="{{ @getenv("APP_URL") }}" />
 
     <title>DeepSix</title>
 
@@ -17,6 +18,7 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/dropzone.css" rel="stylesheet">
     <link href="{{ @getenv("APP_URL") }}css/styles_admin.css" rel="stylesheet">
+    <link href="{{ @getenv("APP_URL") }}lightbox/lightbox.css" rel="stylesheet">
 
     <style>
         body {
@@ -100,5 +102,8 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
     <script src="{{ @getenv("APP_URL") }}js/index_admin.js"></script>
     <script src="{{ @getenv("APP_URL") }}js/delegate_image_delete.js"></script>
+    <script src="{{ @getenv("APP_URL") }}js/delegate_gallery_create.js"></script>
+    <script src="{{ @getenv("APP_URL") }}js/delegate_gallery_add.js"></script>
+    <script src="{{ @getenv("APP_URL") }}lightbox/lightbox.js"></script>
 </body>
 </html>

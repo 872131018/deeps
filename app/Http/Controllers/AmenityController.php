@@ -87,4 +87,13 @@ class AmenityController extends Controller
             die("there was a problem deleting the amenity!");
         }
     }
+    /**
+     * Update an amenity gallery
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function gallery(Request $request)
+    {
+        var_dump($request->all()); die;
+    }
 }

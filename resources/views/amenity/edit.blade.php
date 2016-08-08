@@ -28,11 +28,13 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <button type="button" class="btn btn-secondary" data-delegate="gallery_create">Create Gallery</button>
                             <label class="control-label col-sm-3" for="images">Images:</label>
-                            <div class="col-sm-9">
+                            <div class="col-sm-6">
                               <input type="text" class="form-control" name="images" value="{{ $amenity->images }}">
                             </div>
                         </div>
+                        <div class="col-sm-offset-2 col-sm-10" id="gallery"></div>
                         <div class="form-group">
                             <div class="col-sm-offset-1 col-sm-10">
                                 <button type="submit" class="btn btn-primary">Submit</button>
