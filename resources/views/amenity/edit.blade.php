@@ -7,7 +7,6 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    You are logged in!
                     <form action="{{ url('/amenity/edit') }}/{{ $amenity->id }}" method="POST" class="form-horizontal" role="form">
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="category">Category:</label>
@@ -31,7 +30,15 @@
                             <button type="button" class="btn btn-secondary" data-delegate="gallery_create">Create Gallery</button>
                             <label class="control-label col-sm-3" for="images">Images:</label>
                             <div class="col-sm-6">
-                              <input type="text" class="form-control" name="images" value="{{ $amenity->images }}">
+                                <div class="grid">
+                                    @foreach ($images as $image)
+                                        <div class="grid-item">
+                                            <img src="{{ url($image) }}">
+                                            <div class="circle" data-delegate="image_remove" data-name="{{ $image }}">Remove</div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                                <input type="hidden" class="form-control" name="images" value="{{ $amenity->images }}">
                             </div>
                         </div>
                         <div class="col-sm-offset-2 col-sm-10" id="gallery"></div>

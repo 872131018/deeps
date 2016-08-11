@@ -41,9 +41,11 @@ class AmenityController extends Controller
     public function edit(Request $request)
     {
         $amenity = Amenity::find($request->id);
+        $images = explode(',', $amenity->images);
 
         return view('amenity.edit')
-            ->with('amenity', $amenity);
+            ->with('amenity', $amenity)
+            ->with('images', $images);
     }
     /**
      * Save the amenity updates

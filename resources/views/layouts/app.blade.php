@@ -69,6 +69,9 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
+                                    <a href="{{ url('/units') }}">Units</a>
+                                </li>
+                                <li>
                                     <a href="{{ url('/images') }}">Images</a>
                                 </li>
                                 <li>
@@ -102,6 +105,7 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
     <script src="{{ @getenv("APP_URL") }}js/index_admin.js"></script>
     <script src="{{ @getenv("APP_URL") }}js/delegate_image_delete.js"></script>
+    <script src="{{ @getenv("APP_URL") }}js/delegate_image_remove.js"></script>
     <script src="{{ @getenv("APP_URL") }}js/delegate_gallery_create.js"></script>
     <script src="{{ @getenv("APP_URL") }}js/delegate_gallery_add.js"></script>
     <script src="{{ @getenv("APP_URL") }}lightbox/lightbox.js"></script>
