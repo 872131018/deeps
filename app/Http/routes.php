@@ -22,25 +22,31 @@ Route::group(['middleware' => 'web'], function () {
     /*
     * Amenity stuff
     */
-    Route::get('/amenities', 'AmenityController@index');
+    Route::get('/amenity', 'AmenityController@index');
     Route::get('/amenity/edit/{id}', 'AmenityController@edit');
     Route::post('/amenity/edit/{id}', 'AmenityController@save');
     Route::get('/amenity/delete/{id}', 'AmenityController@delete');
-    Route::options('/amenity/edit/{id}', 'AmenityController@gallery');
+    Route::get('/amenity/add', 'AmenityController@add');
+    Route::post('/amenity/add', 'AmenityController@save');
+
     /*
     * Location stuff
     */
-    Route::get('/locations', 'LocationController@index');
-    Route::get('/locations/edit/{id}', 'LocationController@edit');
-    Route::post('/locations/edit/{id}', 'LocationController@save');
-    Route::get('/locations/delete/{id}', 'LocationController@delete');
+    Route::get('/location', 'LocationController@index');
+    Route::get('/location/edit/{id}', 'LocationController@edit');
+    Route::post('/location/edit/{id}', 'LocationController@save');
+    Route::get('/location/delete/{id}', 'LocationController@delete');
+    Route::get('/location/add', 'LocationController@add');
+    Route::post('/location/add', 'LocationController@save');
     /*
     * Event stuff
     */
-    Route::get('/events', 'EventController@index');
-    Route::get('/events/edit/{id}', 'EventController@edit');
-    Route::post('/events/edit/{id}', 'EventController@save');
-    Route::get('/events/delete/{id}', 'EventController@delete');
+    Route::get('/event', 'EventController@index');
+    Route::get('/event/edit/{id}', 'EventController@edit');
+    Route::post('/event/edit/{id}', 'EventController@save');
+    Route::get('/event/delete/{id}', 'EventController@delete');
+    Route::get('/event/add', 'EventController@add');
+    Route::post('/event/add', 'EventController@save');
     /*
     * Image stuff
     */

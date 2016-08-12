@@ -5,7 +5,9 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">Dashboard
+                    <a class="btn btn-primary" href="{{ url('/location/add') }}" role="button">Add</a>
+                </div>
                 <div class="panel-body">
                     <table class="table table-striped">
                         <thead>
@@ -15,10 +17,10 @@
                             <th>Address</th>
                             <th>City</th>
                             <th>Phone</th>
-                            <th>Fax</th>
-                            <th>URL</th>
-                            <th>Latitude</th>
-                            <th>Longitude</th>
+                            {{--<th>Fax</th>--}}
+                            {{--<th>URL</th>--}}
+                            {{--<th>Latitude</th>--}}
+                            {{--<th>Longitude</th>--}}
                             <th>Edit</th>
                             <th>Delete</th>
                           </tr>
@@ -31,15 +33,15 @@
                                     <td>{{ $location->address }}</td>
                                     <td>{{ $location->city }}</td>
                                     <td>{{ $location->phone }}</td>
-                                    <td>{{ $location->fax }}</td>
-                                    <td>{{ $location->url }}</td>
-                                    <td>{{ $location->latitude }}</td>
-                                    <td>{{ $location->longitude }}</td>
+                                    {{--<td>{{ $location->fax }}</td>--}}
+                                    {{--<td>{{ $location->url }}</td>--}}
+                                    {{--<td>{{ $location->latitude }}</td>--}}
+                                    {{--<td>{{ $location->longitude }}</td>--}}
                                     <td>
-                                        <a class="btn btn-primary" href="{{ url('/locations/edit') }}/{{ $location->id }}" role="button">Edit</a>
+                                        <a class="btn btn-info" href="{{ url('/location/edit') }}/{{ $location->id }}" role="button">Edit</a>
                                     </td>
                                     <td>
-                                        <a class="btn btn-danger" href="{{ url('/locations/delete') }}/{{ $location->id }}" role="button">Delete</a>
+                                        <a class="btn btn-danger" href="{{ url('/location/delete') }}/{{ $location->id }}" role="button">Delete</a>
                                     </td>
                                 </tr>
                             @endforeach

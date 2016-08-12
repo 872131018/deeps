@@ -11,103 +11,103 @@
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="category">Category:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="category" value="{{ $event->category }}">
+                              <input type="text" class="form-control" name="category" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="name">Name:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="name" value="{{ $event->name }}">
+                              <input type="text" class="form-control" name="name" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="location">Location:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="location" value="{{ $event->location }}">
+                              <input type="text" class="form-control" name="location" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="description">Description:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="description" value="{{ $event->description }}">
+                              <input type="text" class="form-control" name="description" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="address">Address:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="address" value="{{ $event->address }}">
+                              <input type="text" class="form-control" name="address" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="city">City:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="city" value="{{ $event->city }}">
+                              <input type="text" class="form-control" name="city" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="state">State:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="state" value="{{ $event->state }}">
+                              <input type="text" class="form-control" name="state" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="zip">Zip:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="zip" value="{{ $event->zip }}">
+                              <input type="text" class="form-control" name="zip" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="phone">Phone:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="phone" value="{{ $event->phone }}">
+                              <input type="text" class="form-control" name="phone" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="images">Images:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="images" value="{{ $event->images }}">
+                              <input type="text" class="form-control" name="images" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="latitude">Latitude:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="latitude" value="{{ $event->latitude }}">
+                              <input type="text" class="form-control" name="latitude" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="longitude">Longitude:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="longitude" value="{{ $event->longitude }}">
+                              <input type="text" class="form-control" name="longitude" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="url">Url:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="url" value="{{ $event->url }}">
+                              <input type="text" class="form-control" name="url" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="start_date">Start Date:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="start_date" value="{{ $event->start_date }}">
+                              <input type="text" class="form-control" name="start_date" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="start_time">Start Time:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="start_time" value="{{ $event->start_time }}">
+                              <input type="text" class="form-control" name="start_time" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="end_date">End Date:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="end_date" value="{{ $event->end_date }}">
+                              <input type="text" class="form-control" name="end_date" value="">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="end_time">End Time:</label>
                             <div class="col-sm-9">
-                              <input type="text" class="form-control" name="end_time" value="{{ $event->end_time }}">
+                              <input type="text" class="form-control" name="end_time" value="">
                             </div>
                         </div>
                         <div class="form-group">

@@ -53,6 +53,9 @@ class LocationController extends Controller
     public function save(Request $request)
     {
         $location = Location::find($request->id);
+        if(!$location) {
+            $location = $this->location;
+        }
         /*
         * Update the location's fields
         */
@@ -92,5 +95,14 @@ class LocationController extends Controller
         } else {
             die("there was a problem deleting the location!");
         }
+    }
+    /**
+     * Show the location add page
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function add()
+    {
+        return view('location.add');
     }
 }

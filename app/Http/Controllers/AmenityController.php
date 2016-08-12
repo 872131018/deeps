@@ -55,6 +55,9 @@ class AmenityController extends Controller
     public function save(Request $request)
     {
         $amenity = Amenity::find($request->id);
+        if(!$amenity) {
+            $amenity = $this->amenity;
+        }
         /*
         * Update the amenity's fields
         */
@@ -90,12 +93,12 @@ class AmenityController extends Controller
         }
     }
     /**
-     * Update an amenity gallery
+     * Show the amenity add page
      *
      * @return \Illuminate\Http\Response
      */
-    public function gallery(Request $request)
+    public function add()
     {
-        var_dump($request->all()); die;
+        return view('amenity.add');
     }
 }

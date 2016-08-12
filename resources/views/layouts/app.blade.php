@@ -75,13 +75,13 @@
                                     <a href="{{ url('/images') }}">Images</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/events') }}">Events</a>
+                                    <a href="{{ url('/event') }}">Events</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/locations') }}">Locations</a>
+                                    <a href="{{ url('/location') }}">Locations</a>
                                 </li>
                                 <li>
-                                    <a href="{{ url('/amenities') }}">Amenities</a>
+                                    <a href="{{ url('/amenity') }}">Amenities</a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/property') }}">Property</a>

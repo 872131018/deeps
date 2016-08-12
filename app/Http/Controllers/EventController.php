@@ -53,6 +53,9 @@ class EventController extends Controller
     public function save(Request $request)
     {
         $event = Event::find($request->id);
+        if(!$event) {
+            $event = $this->event;
+        }
         /*
         * Update the location's fields
         */
@@ -70,7 +73,7 @@ class EventController extends Controller
         $event->longitude = $request->longitude;
         $event->url = $request->url;
         $event->start_date = $request->start_date;
-        $event->start_time = $request->star_time;
+        $event->start_time = $request->start_time;
         $event->end_date = $request->end_date;
         $event->end_time = $request->end_time;
 
@@ -98,5 +101,14 @@ class EventController extends Controller
         } else {
             die("there was a problem deleting the location!");
         }
+    }
+    /**
+     * Show the event add page
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function add()
+    {
+        return view('event.add');
     }
 }
