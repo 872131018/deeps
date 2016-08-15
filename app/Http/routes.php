@@ -57,10 +57,12 @@ Route::group(['middleware' => 'web'], function () {
     /*
     * Unit stuff
     */
-    Route::get('/units', 'UnitController@index');
-    Route::get('/units/edit/{id}', 'UnitController@edit');
-    Route::post('/units/edit/{id}', 'UnitController@save');
-    Route::get('/units/delete/{id}', 'UnitController@delete');
+    Route::get('/unit', 'UnitController@index');
+    Route::get('/unit/edit/{id}', 'UnitController@edit');
+    Route::post('/unit/edit/{id}', 'UnitController@save');
+    Route::get('/unit/delete/{id}', 'UnitController@delete');
+    Route::get('/unit/import', 'UnitController@import');
+    Route::post('/unit/import', 'UnitController@import');
     /*
     * Gallery Routes
     */

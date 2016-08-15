@@ -7,7 +7,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
-                    <form action="{{ url('/locations/edit') }}/{{ $location->id }}" method="POST" class="form-horizontal" role="form">
+                    <form action="{{ url('/location/edit') }}/{{ $location->id }}" method="POST" class="form-horizontal" role="form">
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="category">Location:</label>
                             <div class="col-sm-9">

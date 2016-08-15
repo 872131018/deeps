@@ -5,7 +5,10 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+                <div class="panel-heading">
+                    <span>Dashboard </span>
+                    <a class="btn btn-primary" href="{{ url('/unit/import') }}" role="button">Import</a>
+                </div>
                 <div class="panel-body">
                     <table class="table table-striped">
                         <thead>
@@ -14,7 +17,6 @@
                             <th>Floor</th>
                             <th>Building</th>
                             <th>Floorplan</th>
-                            <th>Area</th>
                             <th>Price</th>
                             <th>Price Override</th>
                             <th>Available Status</th>
@@ -32,7 +34,6 @@
                                 <td>{{ $unit->floor }}</td>
                                 <td>{{ $unit->building }}</td>
                                 <td>{{ $unit->floorplan }}</td>
-                                <td>{{ $unit->area }}</td>
                                 <td>{{ $unit->price }}</td>
                                 <td>{{ $unit->price_override }}</td>
                                 <td>{{ $unit->available_status }}</td>

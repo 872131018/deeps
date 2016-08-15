@@ -19,7 +19,6 @@ class CreateUnitsTable extends Migration
             $table->string('floor');
             $table->string('building');
             $table->string('floorplan');
-            $table->string('area');
             $table->string('price');
             $table->string('price_override');
             $table->string('available_status');

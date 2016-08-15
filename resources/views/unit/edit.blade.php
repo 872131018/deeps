@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
                 <div class="panel-body">
                     You are logged in!
-                    <form action="{{ url('/amenity/edit') }}/{{ $amenity->id }}" method="POST" class="form-horizontal" role="form">
+                    <form action="{{ url('/unit/edit') }}/{{ $amenity->id }}" method="POST" class="form-horizontal" role="form">
                         <div class="form-group">
                             <label class="control-label col-sm-3" for="category">Category:</label>
                             <div class="col-sm-9">

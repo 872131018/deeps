@@ -69,7 +69,7 @@
 
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="{{ url('/units') }}">Units</a>
+                                    <a href="{{ url('/unit') }}">Units</a>
                                 </li>
                                 <li>
                                     <a href="{{ url('/images') }}">Images</a>
