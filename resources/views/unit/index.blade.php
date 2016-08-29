@@ -18,12 +18,12 @@
                             <th>Building</th>
                             <th>Floorplan</th>
                             <th>Price</th>
-                            <th>Price Override</th>
-                            <th>Available Status</th>
+                            {{--<th>Price Override</th>
+                            <th>Available Status</th>--}}
                             <th>Available Date</th>
                             <th>Disabled</th>
-                            <th>Description</th>
-                            <th>Images</th>
+                            {{--<th>Description</th>
+                            <th>Images</th>--}}
                             <th>Edit</th>
                           </tr>
                         </thead>
@@ -35,12 +35,12 @@
                                 <td>{{ $unit->building }}</td>
                                 <td>{{ $unit->floorplan }}</td>
                                 <td>{{ $unit->price }}</td>
-                                <td>{{ $unit->price_override }}</td>
-                                <td>{{ $unit->available_status }}</td>
+                                {{--<td>{{ $unit->price_override }}</td>
+                                <td>{{ $unit->available_status }}</td>--}}
                                 <td>{{ $unit->available_date }}</td>
                                 <td>{{ $unit->disabled }}</td>
-                                <td>{{ $unit->description }}</td>
-                                <td>{{ $unit->images }}</td>
+                                {{--<td>{{ $unit->description }}</td>
+                                <td>{{ $unit->images }}</td>--}}
                                 <td>
                                     <a class="btn btn-primary" href="{{ url('/unit/edit') }}/{{ $unit->id }}" role="button">Edit</a>
                                 </td>

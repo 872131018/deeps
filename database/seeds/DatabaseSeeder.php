@@ -207,5 +207,50 @@ class DatabaseSeeder extends Seeder
             'description' => 'This unit is amazing!',
             'images' => 'unit_103.jpg'
         ]);
+        /*
+        * Floorplan stuff
+        */
+        DB::table('floorplans')->insert([
+            'external_id' => '0001',
+            'floorplan' => 'Floorplan A',
+            'bedrooms' => '1',
+            'bathrooms' => '1',
+            'den' => 'Y',
+            'loft' => 'N',
+            'penthouse' => 'N',
+            'townhome' => 'N',
+            'area_min' => '950',
+            'area_max' => '1050',
+            'description' => 'Floorplan A is great.',
+            'images' => 'unit_101.jpg'
+        ]);
+        DB::table('floorplans')->insert([
+            'external_id' => '0002',
+            'floorplan' => 'Floorplan B',
+            'bedrooms' => '2',
+            'bathrooms' => '2',
+            'den' => 'N',
+            'loft' => 'Y',
+            'penthouse' => 'N',
+            'townhome' => 'N',
+            'area_min' => '1000',
+            'area_max' => '1200',
+            'description' => 'Floorplan B is amazing.',
+            'images' => 'unit_101.jpg'
+        ]);
+        DB::table('floorplans')->insert([
+            'external_id' => '0003',
+            'floorplan' => 'Floorplan C',
+            'bedrooms' => '3',
+            'bathrooms' => '2',
+            'den' => 'N',
+            'loft' => 'N',
+            'penthouse' => 'Y',
+            'townhome' => 'N',
+            'area_min' => '1350',
+            'area_max' => '1500',
+            'description' => 'Floorplan C is the best.',
+            'images' => 'unit_101.jpg'
+        ]);
     }
 }

@@ -64,6 +64,15 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/unit/import', 'UnitController@import');
     Route::post('/unit/import', 'UnitController@import');
     /*
+    * Floorplan stuff
+    */
+    Route::get('/floorplan', 'FloorplanController@index');
+    Route::get('/floorplan/edit/{id}', 'FloorplanController@edit');
+    Route::post('/floorplan/edit/{id}', 'FloorplanController@save');
+    Route::get('/floorplan/delete/{id}', 'FloorplanController@delete');
+    Route::get('/floorplan/import', 'FloorplanController@import');
+    Route::post('/floorplan/import', 'FloorplanController@import');
+    /*
     * Gallery Routes
     */
     Route::get('/gallery', 'GalleryController@index');
